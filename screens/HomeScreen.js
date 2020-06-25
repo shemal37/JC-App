@@ -18,6 +18,9 @@ export default function HomeScreen({ navigation }) {
         <TouchableOpacity onPress={() => navigation.navigate("Members")}>
           <Text style={styles.tile}>Members</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Test")}>
+          <Text style={styles.tile}>Test</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -30,15 +33,15 @@ const styles = StyleSheet.create({
   },
   tile: {
     color: "white",
-    marginBottom: 10,
-    width: 200,
-    height: 100,
-    borderWidth: 2,
+    backgroundColor: "gray",
+    // height: 100,
     borderColor: "red",
+    borderWidth: 1,
     borderRadius: 15,
-    alignSelf: "center",
     textAlign: "center",
     padding: 40,
+    margin: 10,
+    overflow: "hidden",
   },
   tileContainer: {},
 });

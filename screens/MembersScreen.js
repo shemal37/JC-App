@@ -1,11 +1,17 @@
-import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
+import { StyleSheet, FlatList, View, Text } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import * as React from "react";
+import members from "../Data/members";
+import MembersStyle from "../components/MembersComponent";
 
 export default function MemberScreen() {
   return (
     <View style={styles.container}>
-      <Text>Hello from the Members Screen</Text>
+      <FlatList
+        data={members}
+        renderItem={({ item }) => <MembersStyle member={item}></MembersStyle>}
+        keyExtractor={(item) => item.id}
+      ></FlatList>
     </View>
   );
 }

@@ -6,6 +6,7 @@ import BusinessScreen from "./screens/BusinessScreen";
 import JobsScreen from "./screens/JobsScreen";
 import MembersScreen from "./screens/MembersScreen";
 import EventsScreen from "./screens/EventsScreen";
+import TestScreen from "./screens/TestScreen";
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ function App() {
         <Stack.Screen name="Events" component={EventsScreen} />
         <Stack.Screen name="Members" component={MembersScreen} />
         <Stack.Screen name="Business" component={BusinessScreen} />
+        <Stack.Screen name="Test" component={TestScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

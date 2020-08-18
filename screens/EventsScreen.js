@@ -1,11 +1,12 @@
 import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import * as React from "react";
+import EventsComponent from "../components/EventsComponent";
 
 export default function EventsScreen() {
   return (
     <View style={styles.container}>
-      <Text>Hello from the Events Screen</Text>
+      <EventsComponent />
     </View>
   );
 }

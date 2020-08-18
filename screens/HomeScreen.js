@@ -15,11 +15,13 @@ export default function HomeScreen({ navigation }) {
         <TouchableOpacity onPress={() => navigation.navigate("Business")}>
           <Text style={styles.tile}>Business</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("Members")}>
-          <Text style={styles.tile}>Members</Text>
-        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate("Test")}>
           <Text style={styles.tile}>Test</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("MembersPhonebook")}
+        >
+          <Text style={styles.tile}>Members Phonebook</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
